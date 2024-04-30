@@ -24,6 +24,7 @@ If you are looking for an effective vaccination center management system, you ar
 1- Download the project repository as a ZIP file and extract it on your PC.
 
 You will find 4 sub folders and One File as flows:
+![2024-04-30_214750](https://github.com/Dev3amer/VAMS/assets/166306840/cd018d3e-68af-420c-bfaf-bd1080b12a4e)
 
 - The First one is for business layer.
 - The Second one is for DataAccess Layer.
