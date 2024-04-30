@@ -39,5 +39,6 @@ Third, You Need Visual Studio IDE (You Can Download it from Microsoft Website).
 
 - Now just run the VAMS.sln File With Visual Studio.
 
-username: admin
-Password : admin
+- username: admin
+
+- Password : admin
