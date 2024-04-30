@@ -38,7 +38,7 @@ namespace PresentationLayer.People.Controls
             if (_Person == null)
             {
                 ResetPersonInfo();
-                MessageBox.Show("No Person with PersonID = " + PersonID.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("No Person with PersonID = " + PersonID.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -51,7 +51,7 @@ namespace PresentationLayer.People.Controls
             if (_Person == null)
             {
                 ResetPersonInfo();
-                MessageBox.Show("No Person with National No. = " + NationalNo.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("No Person with National No. = " + NationalNo.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

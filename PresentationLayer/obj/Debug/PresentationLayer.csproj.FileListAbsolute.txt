@@ -36,5 +36,105 @@ D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.People.fr
 D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.People.Controls.ctrlPersonCard.resources
 D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.People.frmAddUpdatePerson.resources
 D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.People.frmShowPersonInfo.resources
-D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.People.Controls.ctrlPersonCardWithFilter.resources
-D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.People.frmFindPerson.resources
+D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Users.frmListUsers.resources
+D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Users.Controls.ctrlUserCard.resources
+D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Users.frmUserInfo.resources
+D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Users.frmAddEditUser.resources
+D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Login.frmLogin.resources
+D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Users.frmChangePassword.resources
+D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Vaccine.frmListPatient.resources
+D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Vaccine.frmNewEditVaccineOrder.resources
+D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Vaccine.frmVaccineCard.resources
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraBars.v23.2.dll
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraGrid.v23.2.dll
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraLayout.v23.2.dll
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraPrinting.v23.2.dll
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraScheduler.v23.2.Core.Desktop.dll
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraScheduler.v23.2.Core.dll
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraScheduler.v23.2.dll
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.RichEdit.v23.2.Core.dll
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraTreeList.v23.2.dll
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.Images.v23.2.dll
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.Office.v23.2.Core.dll
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraBars.v23.2.xml
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraGrid.v23.2.xml
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraLayout.v23.2.xml
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraPrinting.v23.2.xml
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraScheduler.v23.2.xml
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraScheduler.v23.2.Core.xml
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraScheduler.v23.2.Core.Desktop.xml
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.RichEdit.v23.2.Core.xml
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraTreeList.v23.2.xml
+D:\Project Planning\VAMS\PresentationLayer\bin\Debug\DevExpress.Office.v23.2.Core.xml
+D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.VaccineTypes.frmAddEditVaccineType.resources
+D:\Project Planning\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Vaccine.frmListVaccineTypes.resources
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\PresentationLayer.exe.config
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\PresentationLayer.exe
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\PresentationLayer.pdb
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\BusinessLayer.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Data.Desktop.v23.2.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Data.v23.2.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Drawing.v23.2.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Printing.v23.2.Core.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Sparkline.v23.2.Core.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Utils.v23.2.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraBars.v23.2.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraEditors.v23.2.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraGrid.v23.2.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraLayout.v23.2.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraPrinting.v23.2.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraScheduler.v23.2.Core.Desktop.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraScheduler.v23.2.Core.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraScheduler.v23.2.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DataAccessLayer.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Pdf.v23.2.Core.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Pdf.v23.2.Drawing.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.RichEdit.v23.2.Core.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraTreeList.v23.2.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Images.v23.2.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Office.v23.2.Core.dll
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\BusinessLayer.pdb
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Data.Desktop.v23.2.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Data.v23.2.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Drawing.v23.2.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Printing.v23.2.Core.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Sparkline.v23.2.Core.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Utils.v23.2.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraBars.v23.2.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraEditors.v23.2.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraGrid.v23.2.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraLayout.v23.2.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraPrinting.v23.2.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraScheduler.v23.2.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraScheduler.v23.2.Core.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraScheduler.v23.2.Core.Desktop.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DataAccessLayer.pdb
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Pdf.v23.2.Core.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Pdf.v23.2.Drawing.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.RichEdit.v23.2.Core.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.XtraTreeList.v23.2.xml
+D:\git-repos\VAMS\PresentationLayer\bin\Debug\DevExpress.Office.v23.2.Core.xml
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.csproj.SuggestedBindingRedirects.cache
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.frmMainForm.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Login.frmLogin.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.People.Controls.ctrlPersonCard.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.People.frmAddUpdatePerson.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.People.frmListPeople.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.People.frmShowPersonInfo.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Users.Controls.ctrlUserCard.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Users.frmAddEditUser.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Users.frmChangePassword.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Users.frmListUsers.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Users.frmUserInfo.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.VaccineTypes.frmAddEditVaccineType.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Vaccine.frmNewEditVaccineOrder.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Vaccine.frmListPatient.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Vaccine.frmVaccineCard.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.Vaccine.frmListVaccineTypes.resources
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.exe
+D:\git-repos\VAMS\PresentationLayer\obj\Debug\PresentationLayer.pdb

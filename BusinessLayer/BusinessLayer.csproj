@@ -42,7 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsCountry.cs" />
+    <Compile Include="clsGlobal.cs" />
+    <Compile Include="clsPatient.cs" />
     <Compile Include="clsPerson.cs" />
+    <Compile Include="clsUser.cs" />
+    <Compile Include="clsVaccineType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

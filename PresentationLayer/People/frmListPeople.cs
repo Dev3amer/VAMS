@@ -111,6 +111,7 @@ namespace PresentationLayer.People
             Form frm1 = new frmAddUpdatePerson();
             frm1.ShowDialog();
             _RefreshDGV();
+            
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)

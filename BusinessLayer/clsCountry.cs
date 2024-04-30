@@ -18,11 +18,9 @@ namespace BusinessLayer
         {
             this.ID = -1;
             this.CountryName = "";
-
         }
 
         private clsCountry(int ID, string CountryName)
-
         {
             this.ID = ID;
             this.CountryName = CountryName;
@@ -37,7 +35,6 @@ namespace BusinessLayer
                 return new clsCountry(ID, CountryName);
             else
                 return null;
-
         }
 
         public static clsCountry Find(string CountryName)
@@ -50,13 +47,11 @@ namespace BusinessLayer
                 return new clsCountry(ID, CountryName);
             else
                 return null;
-
         }
 
         public static DataTable GetAllCountries()
         {
             return clsCountryData.GetAllCountries();
-
         }
     }
 }

@@ -39,7 +39,14 @@
     <Reference Include="DevExpress.Printing.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v23.2.Core.Desktop, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -67,29 +74,23 @@
     </Compile>
     <Compile Include="Global Classes\clsUtil.cs" />
     <Compile Include="Global Classes\clsValidatoin.cs" />
+    <Compile Include="Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="People\Controls\ctrlPersonCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="People\Controls\ctrlPersonCard.Designer.cs">
       <DependentUpon>ctrlPersonCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="People\Controls\ctrlPersonCardWithFilter.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="People\Controls\ctrlPersonCardWithFilter.Designer.cs">
-      <DependentUpon>ctrlPersonCardWithFilter.cs</DependentUpon>
-    </Compile>
     <Compile Include="People\frmAddUpdatePerson.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="People\frmAddUpdatePerson.Designer.cs">
       <DependentUpon>frmAddUpdatePerson.cs</DependentUpon>
-    </Compile>
-    <Compile Include="People\frmFindPerson.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="People\frmFindPerson.Designer.cs">
-      <DependentUpon>frmFindPerson.cs</DependentUpon>
     </Compile>
     <Compile Include="People\frmListPeople.cs">
       <SubType>Form</SubType>
@@ -105,20 +106,77 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\Controls\ctrlUserCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Controls\ctrlUserCard.Designer.cs">
+      <DependentUpon>ctrlUserCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmAddEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmAddEditUser.Designer.cs">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmListUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmListUsers.Designer.cs">
+      <DependentUpon>frmListUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmUserInfo.Designer.cs">
+      <DependentUpon>frmUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VaccineTypes\frmAddEditVaccineType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VaccineTypes\frmAddEditVaccineType.Designer.cs">
+      <DependentUpon>frmAddEditVaccineType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vaccine\frmNewEditVaccineOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vaccine\frmNewEditVaccineOrder.Designer.cs">
+      <DependentUpon>frmNewEditVaccineOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient\frmListPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient\frmListPatient.Designer.cs">
+      <DependentUpon>frmListPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vaccine\frmVaccineCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vaccine\frmVaccineCard.Designer.cs">
+      <DependentUpon>frmVaccineCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VaccineTypes\frmListVaccineTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VaccineTypes\frmListVaccineTypes.Designer.cs">
+      <DependentUpon>frmListVaccineTypes.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmMainForm.resx">
       <DependentUpon>frmMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\Controls\ctrlPersonCard.resx">
       <DependentUpon>ctrlPersonCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="People\Controls\ctrlPersonCardWithFilter.resx">
-      <DependentUpon>ctrlPersonCardWithFilter.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="People\frmAddUpdatePerson.resx">
       <DependentUpon>frmAddUpdatePerson.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="People\frmFindPerson.resx">
-      <DependentUpon>frmFindPerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\frmListPeople.resx">
       <DependentUpon>frmListPeople.cs</DependentUpon>
@@ -136,6 +194,36 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Users\Controls\ctrlUserCard.resx">
+      <DependentUpon>ctrlUserCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmAddEditUser.resx">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmListUsers.resx">
+      <DependentUpon>frmListUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmUserInfo.resx">
+      <DependentUpon>frmUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VaccineTypes\frmAddEditVaccineType.resx">
+      <DependentUpon>frmAddEditVaccineType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vaccine\frmNewEditVaccineOrder.resx">
+      <DependentUpon>frmNewEditVaccineOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient\frmListPatient.resx">
+      <DependentUpon>frmListPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vaccine\frmVaccineCard.resx">
+      <DependentUpon>frmVaccineCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VaccineTypes\frmListVaccineTypes.resx">
+      <DependentUpon>frmListVaccineTypes.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -250,6 +338,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AddPerson 322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users 2 400.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 32 -2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_in 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Application Types 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patients.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vaccines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Addvaccine.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

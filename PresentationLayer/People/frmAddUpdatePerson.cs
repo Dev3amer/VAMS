@@ -16,6 +16,30 @@ namespace PresentationLayer.People
 {
     public partial class frmAddUpdatePerson : Form
     {
+        //Methods To Make Form Move With Mouse
+        private bool MouseDown = false;
+        private Point LastLocation;
+        private void pnTopBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            MouseDown = true;
+            LastLocation = e.Location;
+        }
+        private void pnTopBar_MouseUp(object sender, MouseEventArgs e)
+        {
+            MouseDown = false;
+        }
+        private void pnTopBar_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (MouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - LastLocation.X) + e.X, (this.Location.Y - LastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+
         // Declare a delegate
         public delegate void DataBackEventHandler(object sender, int PersonID);
 
@@ -81,8 +105,6 @@ namespace PresentationLayer.People
             txtPhone.Text = "";
             txtEmail.Text = "";
             txtAddress.Text = "";
-
-
         }
 
         private void _FillCountriesInComoboBox()
@@ -218,6 +240,7 @@ namespace PresentationLayer.People
 
             if (_Person.Save())
             {
+                this.Tag = _Person.PersonID.ToString();
                 lblPersonID.Text = _Person.PersonID.ToString();
                 //change form mode to update.
                 _Mode = enMode.Update;
@@ -330,8 +353,11 @@ namespace PresentationLayer.People
                 errorProvider1.SetError(txtNationalNo, null);
             }
         }
-
         private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }

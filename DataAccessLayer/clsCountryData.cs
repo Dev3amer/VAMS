@@ -31,33 +31,21 @@ namespace DataAccessLayer
 
                 if (reader.Read())
                 {
-
-                    // The record was found
                     isFound = true;
-
                     CountryName = (string)reader["CountryName"];
-
                 }
                 else
-                {
-                    // The record was not found
                     isFound = false;
-                }
-
                 reader.Close();
-
-
             }
             catch (Exception ex)
             {
-                //Console.WriteLine("Error: " + ex.Message);
                 isFound = false;
             }
             finally
             {
                 connection.Close();
             }
-
             return isFound;
         }
 
@@ -80,26 +68,17 @@ namespace DataAccessLayer
 
                 if (reader.Read())
                 {
-
-                    // The record was found
                     isFound = true;
-
                     ID = (int)reader["CountryID"];
-
                 }
                 else
                 {
-                    // The record was not found
                     isFound = false;
                 }
-
                 reader.Close();
-
-
             }
             catch (Exception ex)
             {
-                //Console.WriteLine("Error: " + ex.Message);
                 isFound = false;
             }
             finally
@@ -127,27 +106,16 @@ namespace DataAccessLayer
                 SqlDataReader reader = command.ExecuteReader();
 
                 if (reader.HasRows)
-
-                {
                     dt.Load(reader);
-                }
-
+                
                 reader.Close();
-
-
             }
-
-            catch (Exception ex)
-            {
-                // Console.WriteLine("Error: " + ex.Message);
-            }
+            catch (Exception ex){}
             finally
             {
                 connection.Close();
             }
-
             return dt;
-
         }
     }
 }

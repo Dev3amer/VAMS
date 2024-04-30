@@ -32,7 +32,6 @@
             this.msMainMenue = new System.Windows.Forms.MenuStrip();
             this.servicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newApplicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.applecationSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.peopleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.patientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +48,7 @@
             this.btnMin = new DevExpress.XtraEditors.SimpleButton();
             this.btnClose = new DevExpress.XtraEditors.SimpleButton();
             this.pbBackGround = new System.Windows.Forms.PictureBox();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.msMainMenue.SuspendLayout();
             this.pnMenuHolder.SuspendLayout();
             this.pnTopBar.SuspendLayout();
@@ -72,13 +72,13 @@
             this.msMainMenue.Name = "msMainMenue";
             this.msMainMenue.Size = new System.Drawing.Size(1290, 73);
             this.msMainMenue.TabIndex = 2;
+            this.msMainMenue.TabStop = true;
             this.msMainMenue.Text = "menuStrip1";
             // 
             // servicesToolStripMenuItem
             // 
             this.servicesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newApplicationToolStripMenuItem,
-            this.toolStripSeparator1,
             this.applecationSettingsToolStripMenuItem});
             this.servicesToolStripMenuItem.Image = global::PresentationLayer.Properties.Resources.Applications_64;
             this.servicesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -90,20 +90,17 @@
             // 
             this.newApplicationToolStripMenuItem.Image = global::PresentationLayer.Properties.Resources.List_32;
             this.newApplicationToolStripMenuItem.Name = "newApplicationToolStripMenuItem";
-            this.newApplicationToolStripMenuItem.Size = new System.Drawing.Size(295, 32);
-            this.newApplicationToolStripMenuItem.Text = "New Application";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(292, 6);
+            this.newApplicationToolStripMenuItem.Size = new System.Drawing.Size(278, 32);
+            this.newApplicationToolStripMenuItem.Text = "New Vaccine Order";
+            this.newApplicationToolStripMenuItem.Click += new System.EventHandler(this.newApplicationToolStripMenuItem_Click);
             // 
             // applecationSettingsToolStripMenuItem
             // 
             this.applecationSettingsToolStripMenuItem.Image = global::PresentationLayer.Properties.Resources.Manage_Applications_32;
             this.applecationSettingsToolStripMenuItem.Name = "applecationSettingsToolStripMenuItem";
-            this.applecationSettingsToolStripMenuItem.Size = new System.Drawing.Size(295, 32);
-            this.applecationSettingsToolStripMenuItem.Text = "Applecation Settings";
+            this.applecationSettingsToolStripMenuItem.Size = new System.Drawing.Size(278, 32);
+            this.applecationSettingsToolStripMenuItem.Text = "Vaccine Types";
+            this.applecationSettingsToolStripMenuItem.Click += new System.EventHandler(this.applecationSettingsToolStripMenuItem_Click);
             // 
             // peopleToolStripMenuItem
             // 
@@ -121,6 +118,7 @@
             this.patientsToolStripMenuItem.Name = "patientsToolStripMenuItem";
             this.patientsToolStripMenuItem.Size = new System.Drawing.Size(167, 68);
             this.patientsToolStripMenuItem.Text = "Patients";
+            this.patientsToolStripMenuItem.Click += new System.EventHandler(this.patientsToolStripMenuItem_Click);
             // 
             // employeesToolStripMenuItem
             // 
@@ -129,6 +127,7 @@
             this.employeesToolStripMenuItem.Name = "employeesToolStripMenuItem";
             this.employeesToolStripMenuItem.Size = new System.Drawing.Size(141, 68);
             this.employeesToolStripMenuItem.Text = "Users";
+            this.employeesToolStripMenuItem.Click += new System.EventHandler(this.employeesToolStripMenuItem_Click);
             // 
             // closeToolStripMenuItem
             // 
@@ -150,6 +149,7 @@
             this.currentUserInfoToolStripMenuItem.Name = "currentUserInfoToolStripMenuItem";
             this.currentUserInfoToolStripMenuItem.Size = new System.Drawing.Size(275, 38);
             this.currentUserInfoToolStripMenuItem.Text = "&Current User Info";
+            this.currentUserInfoToolStripMenuItem.Click += new System.EventHandler(this.currentUserInfoToolStripMenuItem_Click);
             // 
             // changePasswordToolStripMenuItem
             // 
@@ -158,6 +158,7 @@
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
             this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(275, 38);
             this.changePasswordToolStripMenuItem.Text = "Change Password";
+            this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
@@ -171,6 +172,7 @@
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
             this.signOutToolStripMenuItem.Size = new System.Drawing.Size(275, 38);
             this.signOutToolStripMenuItem.Text = "Sign &Out";
+            this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
             // 
             // pnMenuHolder
             // 
@@ -258,6 +260,14 @@
             this.pbBackGround.TabIndex = 8;
             this.pbBackGround.TabStop = false;
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(0, 0);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton1.Size = new System.Drawing.Size(10, 10);
+            this.simpleButton1.TabIndex = 1;
+            // 
             // frmMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -267,6 +277,7 @@
             this.Controls.Add(this.pnMenuHolder);
             this.Controls.Add(this.pnTopBar);
             this.Controls.Add(this.pbBackGround);
+            this.Controls.Add(this.simpleButton1);
             this.Font = new System.Drawing.Font("Times New Roman", 7.8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
@@ -295,7 +306,6 @@
         private System.Windows.Forms.ToolStripMenuItem patientsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem peopleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem applecationSettingsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem newApplicationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem servicesToolStripMenuItem;
         private System.Windows.Forms.MenuStrip msMainMenue;
@@ -306,6 +316,7 @@
         private DevExpress.XtraEditors.SimpleButton btnClose;
         private DevExpress.XtraEditors.SimpleButton btnMax;
         private DevExpress.XtraEditors.SimpleButton btnMin;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }
 
