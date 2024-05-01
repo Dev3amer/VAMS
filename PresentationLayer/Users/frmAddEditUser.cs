@@ -92,6 +92,28 @@ namespace PresentationLayer.Users
             txtPassword.Text = _User.Password;
             txtConfirmPassword.Text = _User.Password;
             chkIsActive.Checked = _User.IsActive;
+
+            if(_User.Permissions == Convert.ToInt16(clsUser.enPermissions.All))
+            {
+                rbYes.Checked = true;
+                gpPerrmissions.Enabled = false;
+            }
+            else
+            {
+                rbNo.Checked = true;
+
+                if((Convert.ToInt16(clsUser.enPermissions.ManagePeople) & _User.Permissions) == Convert.ToInt16(clsUser.enPermissions.ManagePeople))
+                    chkPeopleManagement.Checked= true;
+
+                if ((Convert.ToInt16(clsUser.enPermissions.ManageUsers) & _User.Permissions) == Convert.ToInt16(clsUser.enPermissions.ManageUsers))
+                    chkUsersManagement.Checked = true;
+
+                if ((Convert.ToInt16(clsUser.enPermissions.ManagePatient) & _User.Permissions) == Convert.ToInt16(clsUser.enPermissions.ManagePatient))
+                    chkPatientManagement.Checked = true;
+
+                if ((Convert.ToInt16(clsUser.enPermissions.ManageApplication) & _User.Permissions) == Convert.ToInt16(clsUser.enPermissions.ManageApplication))
+                    chkApplicationManagement.Checked = true;
+            }
         }
         private void frmAddEditUser_Load(object sender, EventArgs e)
         {

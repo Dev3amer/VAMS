@@ -61,6 +61,12 @@ namespace PresentationLayer.Vaccine
             txtNotes.Text = _Patient.Notes;
             _PersonID = _Patient.PersonID;
         }
+        void _SetDtCalender()
+        {
+            dtCalender.MinDate = DateTime.Now.AddDays(-7);
+            dtCalender.MaxDate = DateTime.Now;
+            //dtCalender.Value = DateTime.Now;
+        }
         private void _ResetForm()
         {
             _PersonID = -1;
@@ -68,9 +74,10 @@ namespace PresentationLayer.Vaccine
             cbSelectBy.SelectedIndex = 0;
             txtSearch.Clear();
             gpSelectPerson.Enabled = true;
+            _SetDtCalender();
             ctrlPersonCard1.LoadPersonInfo(-2);
             cbVaccineTypes.SelectedIndex= 0;
-            dtCalender.Value = DateTime.Now;
+            
             txtNotes.Text = string.Empty;
         }
         private void _LoadVaccineTypes()
@@ -85,6 +92,7 @@ namespace PresentationLayer.Vaccine
         }
         private void frmNewVaccineOrder_Load(object sender, EventArgs e)
         {
+            _SetDtCalender();
             _LoadVaccineTypes();
             if (_Mode == enMode.Add)
                 cbSelectBy.SelectedIndex = 0;
@@ -92,22 +100,21 @@ namespace PresentationLayer.Vaccine
             {
                 clsVaccineType _VaccineType = new clsVaccineType();
                 _VaccineType = clsVaccineType.Find(_Patient.VaccineTypeID);
-                MessageBox.Show(_VaccineType.VaccineName);
                 cbVaccineTypes.SelectedItem = _VaccineType.VaccineName;
             }
-        }
-        private void dtCalender_ValueChanged(object sender, EventArgs e)
-        {
-            dtCalender.MinDate = DateTime.Now.AddMonths(-1);
-            dtCalender.MaxDate = DateTime.Now;
-            dtCalender.Value = DateTime.Now;
         }
         private void cbSelectBy_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbSelectBy.SelectedIndex == 0)
+            {
+                btnFind.Enabled = false;
                 txtSearch.Enabled = false;
+            }
             else
+            {
+                btnFind.Enabled = true;
                 txtSearch.Enabled = true;
+            }
         }
         private void btnFind_Click(object sender, EventArgs e)
         {
@@ -167,9 +174,17 @@ namespace PresentationLayer.Vaccine
                     "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             clsVaccineType _VaccineType = new clsVaccineType();
             _VaccineType = clsVaccineType.Find(cbVaccineTypes.SelectedItem.ToString());
+            int PatientAge = DateTime.Now.Year - ctrlPersonCard1.SelectedPersonInfo.DateOfBirth.Year;
 
+            if (_VaccineType.MinimumAllowedAge > PatientAge)
+            {
+                MessageBox.Show($"Error: This Vaccine Type only Valid for People Older Than {_VaccineType.MinimumAllowedAge}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                _ResetForm();
+                return;
+            }
             _Patient.PersonID = _PersonID;
             _Patient.VaccineTypeID = _VaccineType.ID;
             _Patient.IssueDate = dtCalender.Value;

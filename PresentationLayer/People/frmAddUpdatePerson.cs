@@ -89,7 +89,7 @@ namespace PresentationLayer.People
 
             llRemoveImage.Visible = (pbPersonImage.ImageLocation != null);
 
-            dtpDateOfBirth.MaxDate = DateTime.Now.AddYears(-18);
+            dtpDateOfBirth.MaxDate = DateTime.Now;
             dtpDateOfBirth.Value = dtpDateOfBirth.MaxDate;
 
             dtpDateOfBirth.MinDate = DateTime.Now.AddYears(-100);

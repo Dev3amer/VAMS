@@ -220,7 +220,6 @@
             this.dtCalender.Name = "dtCalender";
             this.dtCalender.Size = new System.Drawing.Size(200, 28);
             this.dtCalender.TabIndex = 3;
-            this.dtCalender.ValueChanged += new System.EventHandler(this.dtCalender_ValueChanged);
             // 
             // lblIssueDate
             // 
