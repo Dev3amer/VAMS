@@ -51,6 +51,7 @@ namespace PresentationLayer.VaccineTypes
             _VaccineTypeID = VaccineTypeID;
             _Mode = enMode.Edit;
             lblTitle.Text = "Edit Vaccine Type";
+            lblHeader.Text = "Edit Vaccine Type";
             lblResponVaccineID.Text = _VaccineTypeID.ToString();
             _VaccineType = clsVaccineType.Find(_VaccineTypeID);
             txtVaccineName.Text = _VaccineType.VaccineName;

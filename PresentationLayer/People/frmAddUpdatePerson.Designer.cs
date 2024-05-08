@@ -74,7 +74,7 @@
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.pnTopBar = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblHeader = new System.Windows.Forms.Label();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
@@ -583,7 +583,7 @@
             // pnTopBar
             // 
             this.pnTopBar.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.pnTopBar.Controls.Add(this.label11);
+            this.pnTopBar.Controls.Add(this.lblHeader);
             this.pnTopBar.Controls.Add(this.simpleButton1);
             this.pnTopBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTopBar.Location = new System.Drawing.Point(0, 0);
@@ -594,17 +594,17 @@
             this.pnTopBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnTopBar_MouseMove);
             this.pnTopBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnTopBar_MouseUp);
             // 
-            // label11
+            // lblHeader
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.label11.Location = new System.Drawing.Point(3, 8);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(189, 25);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Add / Edit Person";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblHeader.AutoSize = true;
+            this.lblHeader.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeader.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.lblHeader.Location = new System.Drawing.Point(3, 8);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(181, 25);
+            this.lblHeader.TabIndex = 5;
+            this.lblHeader.Text = "Add New Person";
+            this.lblHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // simpleButton1
             // 
@@ -715,7 +715,7 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Panel pnTopBar;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblHeader;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
     }

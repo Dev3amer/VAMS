@@ -37,7 +37,7 @@
             this.txtVaccineName = new System.Windows.Forms.TextBox();
             this.lblVaccineDescription = new System.Windows.Forms.Label();
             this.txtVaccineDescription = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblHeader = new System.Windows.Forms.Label();
             this.lblMinimumAllowedAge = new System.Windows.Forms.Label();
             this.txtMinimumAllowedAge = new System.Windows.Forms.TextBox();
             this.lblTypeFees = new System.Windows.Forms.Label();
@@ -83,9 +83,9 @@
             this.lblTitle.ForeColor = System.Drawing.Color.DarkSeaGreen;
             this.lblTitle.Location = new System.Drawing.Point(3, 8);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(250, 25);
+            this.lblTitle.Size = new System.Drawing.Size(191, 25);
             this.lblTitle.TabIndex = 5;
-            this.lblTitle.Text = "Add / Edit Vaccine Type";
+            this.lblTitle.Text = "Add Vaccine Type";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // iconClose
@@ -128,16 +128,16 @@
             this.txtVaccineDescription.Text = "";
             this.txtVaccineDescription.Validating += new System.ComponentModel.CancelEventHandler(this.txtVaccineDescription_Validating);
             // 
-            // label1
+            // lblHeader
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(0, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(558, 48);
-            this.label1.TabIndex = 120;
-            this.label1.Text = "Add Vaccine Type";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblHeader.Location = new System.Drawing.Point(0, 57);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(558, 48);
+            this.lblHeader.TabIndex = 120;
+            this.lblHeader.Text = "Add Vaccine Type";
+            this.lblHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMinimumAllowedAge
             // 
@@ -248,7 +248,7 @@
             this.Controls.Add(this.lblTypeFees);
             this.Controls.Add(this.txtMinimumAllowedAge);
             this.Controls.Add(this.lblMinimumAllowedAge);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblHeader);
             this.Controls.Add(this.txtVaccineDescription);
             this.Controls.Add(this.lblVaccineDescription);
             this.Controls.Add(this.txtVaccineName);
@@ -276,7 +276,7 @@
         private System.Windows.Forms.TextBox txtVaccineName;
         private System.Windows.Forms.Label lblVaccineDescription;
         private System.Windows.Forms.RichTextBox txtVaccineDescription;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblHeader;
         private System.Windows.Forms.Label lblMinimumAllowedAge;
         private System.Windows.Forms.TextBox txtMinimumAllowedAge;
         private System.Windows.Forms.Label lblTypeFees;

@@ -79,7 +79,8 @@ namespace PresentationLayer.People
             }
             else
             {
-                lblTitle.Text = "Update Person";
+                lblTitle.Text = "Edit Person";
+                lblHeader.Text = "Edit Person";
             }
 
             if (rbMale.Checked)
